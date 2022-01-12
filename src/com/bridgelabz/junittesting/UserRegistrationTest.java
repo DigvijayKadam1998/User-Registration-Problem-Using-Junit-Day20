@@ -29,4 +29,10 @@ class UserRegistrationTest {
 		boolean result = userRegistration.phoneNumber("91 9999999999");
 		assertEquals(true, result);
 	}
+	
+	@Test
+	public void givenPassword_WhenProper_ShouldReturnTrue() {
+		boolean result = userRegistration.password("digvijay@123");
+		assertEquals(true, result);
+	}
 }
