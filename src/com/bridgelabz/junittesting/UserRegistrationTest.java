@@ -53,4 +53,10 @@ class UserRegistrationTest {
 		boolean result = userRegistration.password("Digvijay@123");
 		assertEquals(true, result);
 	}
+	
+	 @Test
+	    public void givenEmail1_WhenProper_ShouldReturnTrue() {
+	        boolean result = userRegistration.emailIdValidator("abc.100@abc.com.au");
+	        assertEquals(true, result);
+	    }
 }
