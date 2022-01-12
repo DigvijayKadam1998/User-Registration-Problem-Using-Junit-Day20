@@ -35,4 +35,11 @@ class UserRegistrationTest {
 		boolean result = userRegistration.password("digvijay@123");
 		assertEquals(true, result);
 	}
+	
+	@Test
+	public void givenPasswordRule2_WhenProper_ShouldReturnTrue() {
+		boolean result = userRegistration.passwordRule2("Digvijay@123");
+		assertEquals(true, result);
+	}
+
 }
