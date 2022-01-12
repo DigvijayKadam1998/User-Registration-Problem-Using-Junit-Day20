@@ -32,14 +32,19 @@ class UserRegistrationTest {
 	
 	@Test
 	public void givenPassword_WhenProper_ShouldReturnTrue() {
-		boolean result = userRegistration.password("digvijay@123");
+		boolean result = userRegistration.password("digvijaykadam");
 		assertEquals(true, result);
 	}
 	
 	@Test
 	public void givenPasswordRule2_WhenProper_ShouldReturnTrue() {
-		boolean result = userRegistration.passwordRule2("Digvijay@123");
+		boolean result = userRegistration.passwordRule2("Digvijaykadam");
 		assertEquals(true, result);
 	}
-
+	
+	@Test
+	public void givenPasswordRule3_WhenProper_ShouldReturnTrue() {
+		boolean result = userRegistration.passwordRule3("Digvijay123");
+		assertEquals(true, result);
+	}
 }
